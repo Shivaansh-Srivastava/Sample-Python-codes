@@ -1,0 +1,6 @@
+list=[('b',100),('c',45),('a',30),('d',600)]
+n=int(input("Enter the value for n: "))
+for i in range(len(list)-1):
+    if list[i][1]>n:
+        list.remove(list[i])
+print(list)

@@ -1,0 +1,8 @@
+a=eval(input("Enter for a: "))
+b=eval(input("Enter for b: "))
+c=eval(input("Enter for c: "))
+total=(a*a)+(b*b)
+if(total==(c*c)):
+    print("Pythagorean triplet!")
+else:
+    print("Not a Pythagorean triplet!")

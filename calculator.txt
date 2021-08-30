@@ -1,0 +1,36 @@
+def add(x,y):
+    total=x+y
+    print("Sum is:",total)
+def diff(x,y):
+    if(x>y):
+        total=x-y
+    else:
+        total=y-x
+    print("Difference is:",total)
+def mul(x,y):
+    total=x*y
+    print("Product is:",total)
+def div(x,y):
+    if(x>y):
+        total=x/y
+    else:
+        total=y/x
+    print("Division is:",total)
+c="yes"
+while(c=="yes"):
+    x=eval(input("Enter for x: "))
+    y=eval(input("Enter for y: "))
+    print("Enter 1-Sum,2-Difference,3-Product,4-Division:\n")
+    k=eval(input("Enter your choice: "))
+    if(k==1):
+        add(x,y)
+    elif(k==2):
+        diff(x,y)
+    elif(k==3):
+        mul(x,y)
+    elif(k==4):
+        div(x,y)
+    else:
+        print("Enter valid choice!!")
+    c=input("Enter yes to continue:")
+print("Thanks for using the calculator.")

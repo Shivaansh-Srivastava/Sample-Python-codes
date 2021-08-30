@@ -1,0 +1,10 @@
+def towers(num,frompeg,topeg,auxpeg):
+    if (num==1):
+        print("Move disk 1 from peg",frompeg,"to peg",topeg)
+        return
+    else:
+        towers(num-1,frompeg,auxpeg,topeg)
+        print("Move disk",num,"from peg",frompeg,"to",topeg)
+        towers(num-1,auxpeg,topeg,frompeg)
+
+towers(num=3,frompeg='A',topeg='C',auxpeg='B')
